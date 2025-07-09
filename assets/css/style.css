@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6)), url('/images/hero.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6)), url('../images/hero.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
     min-height: 600px;
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Page Headers */
 .page-header {
     margin-top: -1px; /* Fixes gap between navbar and header */
-    background-color: #f8f9fa;
+    background: linear-gradient(90deg, #cde2f7, #f0d2e6);
 }
 
 /* Cards */
@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 8px;
     overflow: hidden;
+}
+.card img {
+    height: 250px;
+    width: cover;
 }
 
 .card:hover {
