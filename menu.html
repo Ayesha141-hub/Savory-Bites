@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our seasonal menu featuring locally-sourced ingredients and innovative dishes">
+    <meta property="og:image" content="assets/images/menu-item1.jpg">
+    <title>Menu | Savory Bites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/restaurant-logo.png" type="image/png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/restaurant-logo.png" alt="Savory Bites Logo" width="40" height="40" class="d-inline-block align-top me-2">
+                Savory Bites
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faqs.html">FAQs</a>
+                    </li>
+                </ul>
+                <div class="form-check form-switch ms-3">
+                    <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                    <label class="form-check-label text-light" for="darkModeToggle">Dark Mode</label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header py-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">Our Menu</h1>
+                    <p class="lead mb-0">Seasonal dishes crafted with care</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Menu Navigation -->
+        <section class="py-4 bg-white sticky-top" style="top: 56px; z-index: 1020;">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="#starters" class="btn btn-outline-dark btn-sm rounded-pill mx-1 mb-2">Starters</a>
+                    <a href="#mains" class="btn btn-outline-dark btn-sm rounded-pill mx-1 mb-2">Main Courses</a>
+                    <a href="#desserts" class="btn btn-outline-dark btn-sm rounded-pill mx-1 mb-2">Desserts</a>
+                    <a href="#drinks" class="btn btn-outline-dark btn-sm rounded-pill mx-1 mb-2">Drinks</a>
+                    <a href="#wine" class="btn btn-outline-dark btn-sm rounded-pill mx-1 mb-2">Wine Pairings</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Sections -->
+        <section class="py-5">
+            <div class="container">
+                <!-- Starters -->
+                <div id="starters" class="mb-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="fw-bold">Starters</h2>
+                        <a href="#top" class="small text-muted text-decoration-none">Back to top</a>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Truffle Arancini</h5>
+                                        <span class="text-primary fw-bold">$14</span>
+                                    </div>
+                                    <p class="card-text">Crispy risotto balls with black truffle and mozzarella, served with marinara sauce</p>
+                                    <span class="badge bg-light text-dark">Vegetarian</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Seared Scallops</h5>
+                                        <span class="text-primary fw-bold">$18</span>
+                                    </div>
+                                    <p class="card-text">Perfectly seared scallops with cauliflower purée and crispy pancetta</p>
+                                    <span class="badge bg-light text-dark">Gluten Free</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Burrata Salad</h5>
+                                        <span class="text-primary fw-bold">$16</span>
+                                    </div>
+                                    <p class="card-text">Creamy burrata with heirloom tomatoes, basil, and aged balsamic</p>
+                                    <span class="badge bg-light text-dark">Vegetarian</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Duck Confit</h5>
+                                        <span class="text-primary fw-bold">$17</span>
+                                    </div>
+                                    <p class="card-text">Tender duck leg with cherry compote and toasted brioche</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Courses -->
+                <div id="mains" class="mb-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="fw-bold">Main Courses</h2>
+                        <a href="#top" class="small text-muted text-decoration-none">Back to top</a>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="images/menu-item1.jpg" class="card-img-top" loading="lazy" alt="Grilled Salmon with Vegetables">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Grilled Salmon</h5>
+                                        <span class="text-primary fw-bold">$28</span>
+                                    </div>
+                                    <p class="card-text">Fresh Atlantic salmon with seasonal vegetables and lemon butter sauce</p>
+                                    <span class="badge bg-light text-dark">Gluten Free</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="images/menu-item2.jpg" class="card-img-top" loading="lazy" alt="Beef Tenderloin with Mashed Potatoes">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Beef Tenderloin</h5>
+                                        <span class="text-primary fw-bold">$42</span>
+                                    </div>
+                                    <p class="card-text">Premium cut with truffle mashed potatoes and red wine reduction</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="images/menu-item3.jpg" class="card-img-top" loading="lazy" alt="Vegetable Risotto">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Vegetable Risotto</h5>
+                                        <span class="text-primary fw-bold">$24</span>
+                                    </div>
+                                    <p class="card-text">Creamy Arborio rice with seasonal vegetables and parmesan</p>
+                                    <span class="badge bg-light text-dark">Vegetarian</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Roasted Chicken</h5>
+                                        <span class="text-primary fw-bold">$26</span>
+                                    </div>
+                                    <p class="card-text">Free-range chicken with rosemary potatoes and wild mushroom sauce</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Lobster Pasta</h5>
+                                        <span class="text-primary fw-bold">$38</span>
+                                    </div>
+                                    <p class="card-text">Fresh lobster with handmade tagliatelle in a light cream sauce</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Mushroom Wellington</h5>
+                                        <span class="text-primary fw-bold">$22</span>
+                                    </div>
+                                    <p class="card-text">Wild mushroom duxelles wrapped in puff pastry with red wine sauce</p>
+                                    <span class="badge bg-light text-dark">Vegetarian</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div id="desserts" class="mb-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="fw-bold">Desserts</h2>
+                        <a href="#top" class="small text-muted text-decoration-none">Back to top</a>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Chocolate Soufflé</h5>
+                                        <span class="text-primary fw-bold">$12</span>
+                                    </div>
+                                    <p class="card-text">Warm chocolate soufflé with vanilla bean ice cream</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Crème Brûlée</h5>
+                                        <span class="text-primary fw-bold">$10</span>
+                                    </div>
+                                    <p class="card-text">Classic vanilla bean custard with caramelized sugar crust</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Seasonal Fruit Tart</h5>
+                                        <span class="text-primary fw-bold">$11</span>
+                                    </div>
+                                    <p class="card-text">Buttery pastry with pastry cream and market fresh fruits</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div id="drinks" class="mb-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="fw-bold">Drinks</h2>
+                        <a href="menu.html" class="small text-muted text-decoration-none">Back to top</a>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">Cocktails</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex justify-content-between mb-2">
+                                            <span>Savory Martini</span>
+                                            <span class="text-primary fw-bold">$14</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between mb-2">
+                                            <span>Elderflower Spritz</span>
+                                            <span class="text-primary fw-bold">$12</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between mb-2">
+                                            <span>Whiskey Sour</span>
+                                            <span class="text-primary fw-bold">$13</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <span>Seasonal Sangria</span>
+                                            <span class="text-primary fw-bold">$11</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">Non-Alcoholic</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex justify-content-between mb-2">
+                                            <span>Artisanal Sodas</span>
+                                            <span class="text-primary fw-bold">$6</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between mb-2">
+                                            <span>Fresh Juices</span>
+                                            <span class="text-primary fw-bold">$7</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between mb-2">
+                                            <span>Sparkling Water</span>
+                                            <span class="text-primary fw-bold">$5</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <span>Coffee/Tea</span>
+                                            <span class="text-primary fw-bold">$4</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wine Pairings -->
+                <div id="wine">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="fw-bold">Wine Pairings</h2>
+                        <a href="#top" class="small text-muted text-decoration-none">Back to top</a>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">Red Wines</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex justify-content-between mb-2">
+                                            <span>Pinot Noir, Willamette Valley</span>
+                                            <span class="text-primary fw-bold">$14/glass</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between mb-2">
+                                            <span>Cabernet Sauvignon, Napa Valley</span>
+                                            <span class="text-primary fw-bold">$16/glass</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between mb-2">
+                                            <span>Malbec, Mendoza</span>
+                                            <span class="text-primary fw-bold">$12/glass</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">White Wines</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex justify-content-between mb-2">
+                                            <span>Chardonnay, Sonoma Coast</span>
+                                            <span class="text-primary fw-bold">$13/glass</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between mb-2">
+                                            <span>Sauvignon Blanc, Marlborough</span>
+                                            <span class="text-primary fw-bold">$12/glass</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between mb-2">
+                                            <span>Riesling, Mosel</span>
+                                            <span class="text-primary fw-bold">$11/glass</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Note -->
+        <section class="py-5 bg-light">
+            <div class="container text-center">
+                <p class="lead mb-0">*Menu items may change based on seasonal availability. Please inform your server of any dietary restrictions.</p>
+            </div>
+        </section>
+    </main>
+
+<!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="h5 mb-3">Savory Bites</h3>
+                    <p>Elevating dining to an art form with exceptional cuisine, impeccable service, and unforgettable experiences.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></svg></a>
+                        <a href="#" class="text-white me-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></svg></a>
+                        <a href="#" class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></svg></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h3 class="h5 mb-3">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="menu.html" class="text-white text-decoration-none">Menu</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="faqs.html" class="text-white text-decoration-none">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h3 class="h5 mb-3">Contact Info</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></svg> 123 Gourmet Ave, Foodville</li>
+                        <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"></svg> info@savorybites.com</li>
+                        <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></svg> (555) 123-4567</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h3 class="h5 mb-3">Hours</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Monday - Thursday: 11am - 10pm</li>
+                        <li class="mb-2">Friday - Saturday: 11am - 11pm</li>
+                        <li class="mb-2">Sunday: 10am - 9pm</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">&copy; 2023 Savory Bites. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline small mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="list-inline-item mx-2">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Security</a></li>
+                        <li class="list-inline-item mx-2">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

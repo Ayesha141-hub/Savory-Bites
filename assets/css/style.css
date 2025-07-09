@@ -1,0 +1,182 @@
+/* Base Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--dark-color);
+    padding-top: 56px; /* For fixed navbar */
+    transition: background-color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6)), url('/images/hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Page Headers */
+.page-header {
+    margin-top: -1px; /* Fixes gap between navbar and header */
+    background-color: #f8f9fa;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Policy Pages Specific Styles */
+.policy-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.policy-content ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.policy-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Dark Mode Styles */
+body[data-bs-theme="dark"] {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+[data-bs-theme="dark"] .bg-light {
+    background-color: #1e1e1e !important;
+    color: #f5f5f5;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    border-color: #333;
+}
+
+[data-bs-theme="dark"] .text-muted {
+    color: #b3b3b3 !important;
+}
+
+[data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+    background-color: #2d2d2d;
+    color: #f5f5f5;
+}
+
+[data-bs-theme="dark"] .accordion-body {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+[data-bs-theme="dark"] .page-header {
+    background-color: #1e1e1e !important;
+    color: #f5f5f5;
+}
+
+[data-bs-theme="dark"] .policy-content h2 {
+    border-bottom-color: #333;
+}
+
+/* Accessibility Improvements */
+a:focus, button:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 100px 0;
+        text-align: center;
+    }
+    
+    .feature-icon {
+        margin-bottom: 1rem;
+    }
+    
+    .policy-content {
+        padding: 0 15px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header {
+        padding: 3rem 0;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+/* Footer Links */
+.footer-links a {
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color) !important;
+    text-decoration: underline;
+}
